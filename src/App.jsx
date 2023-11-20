@@ -15,7 +15,7 @@ function App() {
   const submitHandler = (e) => {
     e.preventDefault();
     if (editIndex !== -1) {
-      // If editIndex !== -1, it means it's an edit action
+     
       const updatedTodos = [...todos];
       updatedTodos[editIndex] = { title, desc };
       setTodos(updatedTodos);
@@ -27,7 +27,7 @@ function App() {
         alert("Title or Description cant't be empty" )
         return ;
       }
-      // If editIndex === -1, it's a new todo
+      
       setTodos([...todos, { title, desc }]);
       setTitle("");
       setDesc("");
@@ -84,20 +84,20 @@ function App() {
                 }}
                 key={index}
               >
-                <div>
+                <div style={{ width:"90%"}}>
                   <h3>{todo.title}</h3>
                   <p>{todo.desc}</p>
                 </div>
-                <div className="btn">
+                <div className="btn"  style={{ display:"flex"}}>
                   <DelButton  onClick={() => handleDelete(index)}>
-                    <MdDelete color="red" size={30} />
+                    <MdDelete color="red" size={25} />
                   </DelButton>
                   <DelButton onClick={() => handleEdit(index)}>
-                    <MdEdit color="green" size={30} />
+                    <MdEdit color="green" size={25} />
                   </DelButton>
                 </div>
               </li>
-            )) : <h3>No Todos here</h3>}
+            )) : <h3>No Todos here  </h3>}
           </ul>
         </div>
       </div>
