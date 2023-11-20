@@ -1,6 +1,6 @@
 # Todo List App
 
-![Todo List App Screenshot](assets/todo-img.png)
+![Todo List App Screenshot](https://github.com/GautamBisht12/React-Todo-App/blob/React/src/assets/todo-img.png)
 
 ## Overview
 
